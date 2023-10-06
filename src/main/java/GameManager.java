@@ -1,4 +1,3 @@
-package lotr;
 public class GameManager {
     public static void main(String[] args) {
         Character c1 = CharacterFactory.createCharacter();

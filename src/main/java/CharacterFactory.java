@@ -1,4 +1,3 @@
-package lotr;
 import java.util.Random;
 
 

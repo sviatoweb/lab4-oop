@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import lotr.Knight;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -15,7 +14,7 @@ public class KnightTest {
 
     @Test
     public void testIsClass() {
-        assertTrue(character instanceof lotr.Character);
+        assertTrue(character instanceof Character);
     }
 
     @Test
