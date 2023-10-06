@@ -1,13 +1,18 @@
 package lotr;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+// import lombok.AllArgsConstructor;
+// import lombok.Getter;
+// import lombok.Setter;
 
-@Setter @Getter @AllArgsConstructor
+// @Setter @Getter @AllArgsConstructor
 public abstract class Character {
     private int power;
     private int hp;
+
+    Character ( int hp, int power) {
+        this.hp = hp;
+        this.power = power;
+    }
 
     public abstract void kick(Character c);
 
@@ -21,6 +26,18 @@ public abstract class Character {
         } else {
             return hp;
         }
+    }
+
+    public void setHp(int val) {
+        hp = val;
+    }
+
+    public int getPower() {
+        return power;
+    }
+
+    public void setPower(int val) {
+        power = val;
     }
 
     @Override
